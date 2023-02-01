@@ -61,7 +61,10 @@ nav {
 
 #footer1 {
     grid-area: fo;
-    background-color: aliceblue
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #burger_list {
