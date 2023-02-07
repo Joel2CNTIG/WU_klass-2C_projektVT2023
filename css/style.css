@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 
 * {
@@ -10,13 +12,12 @@
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 150px 500px 500px 500px 500px 150px;
+    grid-template-rows: 150px 1000px 500px 500px 150px;
     grid-template-areas: 
     "he na"
     "s1 s1"
     "s2 s2"
     "s3 s3"
-    "s4 s4"
     "fo fo"
     
 }
@@ -31,46 +32,122 @@ header {
     grid-area: he;
     display: flex;
     background-color: rgb(255, 149, 167);
-    
+    letter-spacing: 10px;
+    align-items: center;
 }
 
 nav {
     grid-area: na;
-    background-color: greenyellow;
+    background-color: rgb(255, 149, 167);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #section1 {
     grid-area: s1;
-    background-color: aquamarine;
+    background-color: rgb(83, 39, 39);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #section2 {
     grid-area: s2;
-    background-color: red;
+    background-color: white;
 }
 
 #section3 {
     grid-area: s3;
-    background-color: orange;
+    background-color: white;
 }
 
 #section4 {
     grid-area: s4;
-    background-color: brown;
+    background-color: white;
 }
 
 #footer1 {
     grid-area: fo;
-    background-color: aliceblue;
+    background-color: rgb(255, 149, 167);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 #burger_list {
+    height: 400px;
+    width: 200px;
+    top: -400px;
     list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 149, 167);
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s;
 } 
 
-#burger_list a {
+#burger_menu {
+    margin-right: 80px;
+    cursor: pointer;
+}
 
+#burger_menu div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px;
+    border-radius: 10%;
+}
+
+#burger_list a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.list_text {
+    font-size: 2rem;
+}
+
+#burger_list a :hover {
+    font-weight: bold;
+}
+
+a {
+    cursor: pointer;
+}
+
+.burger_x_form #burger_line_1 {
+    opacity: 0;
+}
+
+.burger_x_form #burger_line_2 {
+    transform: rotate(-45deg) translate(-7px, 0px);
+}
+
+.burger_x_form #burger_line_3 {
+    transform: rotate(45deg) translate(-7px, 0px);
+}
+.burger_list_visible {
+    transform: translateY(500px);
+}
+
+.ice_cream_vectors {
+    width: 200px;
+    height: auto
+}
+
+#cream_of_ice {
+    width: 600px;
+    height: auto;
+}
+
+#slogan {
+    font-size: 2rem;
+    font-family: 'Cedarville Cursive', cursive;
+    color: white;
 }
