@@ -58,6 +58,7 @@ nav {
     grid-area: s2;
     background-image: url(../img/ice_cream_background_2.jpg);
     background-repeat:   no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -71,6 +72,10 @@ nav {
     display: flex;
     justify-content: center;
 
+}
+
+#text_full_size {
+    display: none;
 }
 
 #footer1 {
@@ -151,7 +156,7 @@ a {
     height: auto;
 }
 
-#slogan {
+.slogan {
     font-size: 2rem;
     font-family: 'Cedarville Cursive', cursive;
     color: white;
@@ -169,4 +174,47 @@ a {
 #cow_text {
     color: white;
     margin-top: 20px;
+    font-size: 40px;
+}
+
+#text_full_size {
+    background-color: rgb(83, 39, 39);
+    grid-area: te ;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 750px) {
+    #text_full_size {
+        background-color: rgb(83, 39, 39);
+        grid-area: te ;
+        display: flex;
+        justify-content: center;
+    }
+
+    #grid_wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 150px 50px 500px 500px 100px;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "te te"
+        "s1 s1"
+        "s2 s3"
+        "fo fo"
+        
+    }
+    #section1 {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #text_small_size {
+        display: none;
+    }
+
+
+
+
+
 }
