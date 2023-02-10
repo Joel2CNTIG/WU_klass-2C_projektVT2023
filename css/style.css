@@ -57,6 +57,7 @@ nav {
 #section2 {
     grid-area: s2;
     background-image: url(../img/ice_cream_background_2.jpg);
+    background-repeat:   no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -65,12 +66,11 @@ nav {
 
 #section3 {
     grid-area: s3;
-    background-color: white;
-}
+    background-image: url(../img/Kossa.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
 
-#section4 {
-    grid-area: s4;
-    background-color: white;
 }
 
 #footer1 {
@@ -164,4 +164,9 @@ a {
     color: rgb(177, 22, 22);
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 8px;
+}
+
+#cow_text {
+    color: white;
+    margin-top: 20px;
 }
