@@ -223,8 +223,15 @@ a {
         display: none;
     }
 
+    header {
+        align-items: center;
+        justify-content: center;
+    }
 
 
+    .burger_list_visible {
+        transform: none
+    }
 
 
 }
