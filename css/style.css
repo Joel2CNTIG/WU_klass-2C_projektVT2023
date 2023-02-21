@@ -191,6 +191,47 @@ a {
     color: white;
 }
 
+
+/* page 2 */
+
+
+#grid_wrapper2 {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows: 150px 1500px 150px;
+    grid-template-areas: 
+    "he na"
+    "ar ar"
+    "fo fo"
+}
+
+#main {
+    grid-area: ar;
+}
+
+#footer_page2 {
+    grid-area: fo;
+}
+
+#body_page2 {
+    background-image: url(../img/ice_cream_flavours.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 2400px 1800px;
+}
+
+.textwall {
+    position: relative;
+    background-color: rgb(83, 83, 83);
+}
+
+#text_1 {
+    height: 400px;
+    width: 200px
+    
+}
+
+
 @media screen and (min-width: 750px) {
     #text_full_size {
         background-color: rgb(83, 39, 39);
