@@ -274,6 +274,110 @@ a {
     font-size: 1.5rem;
 }
 
+/*Page 3*/
+
+#grid_wrapper3 {
+    display: grid;
+    grid-template-columns: minmax(200px 1fr) 200px;
+    grid-template-rows: 150px 1300px 400px 400px 400px 400px 150px;
+    grid-template-areas: 
+    "he na"
+    "a1 a1"
+    "a2 a2"
+    "a3 a3"
+    "a4 a4"
+    "a5 a5"
+    "fo fo";
+}
+
+#top_section_gridwrapper {
+    grid-area: a1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "pr pr"
+    "ti ti"
+    "s1 s2"
+    "s3 s4"
+    "s5 s6"
+    "s7 s8"
+}
+
+#flavour_title {
+    grid-area: ti;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(110, 94, 83) ;
+}
+
+#flavour_title_text {
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 5px;
+}
+
+.icecream_pictures {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(110, 94, 83) ;
+}
+
+.icecream_text {
+    color: white;
+}
+
+.flavour_pics {
+    height: 200px;
+    width: 200px;
+    border: 10px solid rgb(66, 44, 44);
+}
+
+#prices {
+    grid-area: pr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#picture1 {
+    grid-area: s1;
+}
+
+#picture2 {
+    grid-area: s2;
+}
+
+#picture3 {
+    grid-area: s3;
+}
+
+#picture4 {
+    grid-area: s4;
+}
+
+#picture5 {
+    grid-area: s5;
+}
+
+#picture6 {
+    grid-area: s6;
+}
+
+#picture7 {
+    grid-area: s7;
+}
+
+#picture8 {
+    grid-area: s8;
+}
+
+
 @media screen and (min-width: 750px) {
     #text_full_size {
         background-color: rgb(83, 39, 39);
