@@ -391,6 +391,7 @@ a {
 
 #special2 {
     grid-area: a3;
+    background-color: rgb(231, 231, 231);
 }
 
 #special3 {
@@ -430,6 +431,9 @@ a {
 }
 .letter3{
     color: blue;
+}
+.letter4{
+    color: rgb(237, 195, 7);
 }
 
 .textbox_specials {
