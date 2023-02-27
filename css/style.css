@@ -396,6 +396,7 @@ a {
 
 #special3 {
     grid-area: a4;
+    background-color: gray;
 }
 
 #special4 {
