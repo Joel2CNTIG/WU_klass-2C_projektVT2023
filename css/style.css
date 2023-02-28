@@ -350,6 +350,13 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.price_text {
+    font-size: 1.75rem;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
 }
 
 #picture1 {
@@ -401,6 +408,11 @@ a {
 
 #special4 {
     grid-area: a5;
+    background-color: rgb(231, 231, 231);
+}
+
+#pizza_text {
+    color: rgb(63, 63, 63);
 }
 
 .specials {
@@ -408,7 +420,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
 }
 
 .specials_text {
@@ -477,6 +488,15 @@ a {
 
 }
 
+#footer_page3 {
+    grid-area: fo;
+    background: rgb(255, 149, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 @media screen and (min-width: 750px) {
     #text_full_size {
         background-color: rgb(83, 39, 39);
@@ -539,6 +559,7 @@ a {
         "fo"
     }
 
+
 }
 
 
@@ -566,5 +587,29 @@ a {
         right: 0px;
         position: static;
     }
+
+    #grid_wrapper3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 150px 750px 150px 850px 850px 150px;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "a1 a1"
+        "sp sp"
+        "a2 a3"
+        "a4 a5"
+        "fo fo";
+    }
     
+    #top_section_gridwrapper {
+        background: rgb(110, 94, 83) ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 1fr 1fr;
+        grid-template-areas: 
+        "pr pr pr pr"
+        "ti ti ti ti"
+        "s1 s2 s3 s4"
+        "s5 s6 s7 s8"
+    }
+
 }
