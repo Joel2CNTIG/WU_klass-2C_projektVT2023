@@ -22,7 +22,8 @@
     "s1 s1"
     "s2 s2"
     "s3 s3"
-    "fo fo"
+    "fo fo";
+    z-index: 1;
     
 }
 
@@ -87,6 +88,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 10px;
 }
 
 #burger_list {
@@ -170,7 +172,7 @@ a {
     font-size: 2rem;
     margin-top: 35px;
     margin-bottom: 100px;
-    color: rgb(177, 22, 22);
+    color: rgb(220, 1, 1);
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 8px;
 }
@@ -194,6 +196,65 @@ a {
 .footer_smalltext {
     color: white;
 }
+
+
+#popup {
+    position: fixed;
+    top: 12.5vh;
+    left: 12.5vw;
+    height: 75%;
+    width: 75%;
+    background: white;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: 5% 95%;
+    grid-template-areas: 
+    "po po2"
+    "po3 po3"
+    ;
+}
+
+#popup_textblock {
+    grid-area: po3;
+    background-color: white;
+}
+
+#filler_div {
+    grid-area: po;
+    background-color: rgb(180, 180, 180);
+}
+
+#x_popup {
+    grid-area: po2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: brown;
+}
+
+#x_popup :hover {
+    cursor: pointer;
+}
+
+#popup_x_line1 {
+    height: 15px;
+    width: 3px;
+    background: white;
+    transform: rotate(45deg) translate(1.5px, -2px)
+}
+
+#popup_x_line2 {
+    height: 15px;
+    width: 3px;
+    background: white;
+    transform: rotate(-45deg)
+}
+
+.popup_hidden {
+    visibility: hidden;
+}
+
 
 
 /* page 2 */
@@ -231,6 +292,7 @@ a {
     align-items: center;
     flex-direction: column;
     z-index: 1;
+    padding: 10px;
 }
 
 #text_1 {
@@ -257,13 +319,15 @@ a {
     font-size: 2.5rem;
     margin-top: 20px;
     margin-bottom: 50px;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 
 .page2_text {
     font-size: 1.5rem;
     margin-left: 10px;
     margin-right: 10px;
+    line-height: 30px;
+    font-family: 'Tilt Neon', cursive;
 }
 
 #footer_page2 {
@@ -275,7 +339,8 @@ a {
 
 #footer2_text {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-family: 'Kanit', sans-serif;
 }
 
 /*Page 3*/
@@ -610,6 +675,10 @@ a {
         "ti ti ti ti"
         "s1 s2 s3 s4"
         "s5 s6 s7 s8"
+    }
+
+    #popup {
+        grid-template-columns: 97.5% 2.5%;
     }
 
 }
