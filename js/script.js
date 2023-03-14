@@ -10,6 +10,7 @@ const rightArrow = document.getElementById('arrow_2')
 cycleReview1 = document.getElementById('cycle_review1')
 cycleReview2 = document.getElementById('cycle_review2')
 cycleReview3 = document.getElementById('cycle_review3')
+var windowWidth = window.matchMedia("(min-width: 1200px)")
 
 function toggleMenu() {
     burgerList.classList.toggle('burger_list_visible')
@@ -82,8 +83,7 @@ function moveRight() {
     }
 }
 
-
-
-
-
+if (windowWidth.matches) {
+    resetTranslateX()
+}
 

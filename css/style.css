@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
@@ -629,11 +628,11 @@ a {
 }
 
 .review_textblock {
-    background: blanchedalmond;
+    background: bisque;
     height: 450px;
     width: 80%;
     padding: 40px;
-    border: 5px solid black;
+    border: 5px solid rgb(66, 44, 44);
     border-radius: 25px;
 }
 
@@ -703,8 +702,9 @@ a {
     width: 500px;
     position: absolute;
     transition: all 0.75s;
-    border: 5px solid black;
-    border-radius: 15px;
+    border: 5px solid rgb(66, 44, 44);
+    border-radius: 20px;
+    padding: 40px;
 }
 
 #cycle_review2 {
@@ -713,6 +713,30 @@ a {
 
 #cycle_review3 {
     transform: translateX(2400px);
+}
+
+.reviews_titletext {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.reviews_text {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+}
+
+#review_toptext {
+    font-family: 'Tilt Neon', cursive;
+    font-size: 2.25rem;
+}
+
+.stars {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 
@@ -779,6 +803,20 @@ a {
         "fo"
     }
 
+    #grid_wrapper4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 150px 100px 600px 600px 50px 800px 150px;
+        grid-template-areas:
+        "na na "
+        "he he"
+        "ret ret"
+        "r1 r1"
+        "r2 r2"
+        "arr arr"
+        "r3 r3"
+        "fo4 fo4";
+    }
+
 
 }
 
@@ -836,4 +874,42 @@ a {
         grid-template-columns: 97.5% 2.5%;
     }
 
+    #grid_wrapper4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 150px 100px 600px 50px 800px 150px;
+        grid-template-areas:
+        "na na"
+        "he he"
+        "ret ret"
+        "r1 r2"
+        "arr arr"
+        "r3 r3"
+        "fo4 fo4";
+    }
+
+    #arrow_1 {
+        display: none;
+    }
+    #arrow_2 {
+        display: none;
+    }
+
+    #cycle_review1 {
+        transform: translateX(0px);
+        position: static;
+    }
+    
+    #cycle_review2 {
+        transform: translateX(0px);
+        position: static;
+    }
+
+    #cycle_review3 {
+        transform: translateX(0px);
+        position: static;
+    }
+
+    #review_cycle {
+        justify-content: space-around;
+    }
 }
