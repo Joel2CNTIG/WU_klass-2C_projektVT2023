@@ -83,7 +83,4 @@ function moveRight() {
     }
 }
 
-if (windowWidth.matches) {
-    resetTranslateX()
-}
 
