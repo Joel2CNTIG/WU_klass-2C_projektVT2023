@@ -619,6 +619,9 @@ a {
 #footer4 {
     grid-area: fo4;
     background: rgb(255, 149, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #review_cycle {
