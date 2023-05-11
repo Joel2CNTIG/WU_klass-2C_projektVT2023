@@ -544,7 +544,7 @@ a {
 .textbox_specials {
     background-color: white;
     height: 100px;
-    width: 450px;
+    width: 400px;
     border: 3px solid black;
     border-radius: 10px;
     display: flex;
@@ -602,18 +602,8 @@ a {
     "r2 r2"
     "arr arr"
     "r3 r3"
-    "fo4 fo4";
-}
-
-#body_page4.modal-open {
+    "fo4 fo4";  
     overflow: hidden;
-    position: fixed;
-    margin: 0;
-    width: 100vw; 
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
 }
 
 #footer4 {
@@ -630,6 +620,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    position: relative;
 }
 
 #review_top {
@@ -863,6 +855,9 @@ a {
         "fo4 fo4";
     }
 
+    #body_page4 {
+        max-width: none;
+    }
 
 }
 
