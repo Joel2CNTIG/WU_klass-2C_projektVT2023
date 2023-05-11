@@ -284,10 +284,12 @@ a {
 #grid_wrapper2 {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 150px 1500px 100px;
+    grid-template-rows: 150px 1500px 800px 800px 100px;
     grid-template-areas: 
     "he na"
     "ar ar"
+    "i1 i1"
+    "i2 i2"
     "fo fo"
 }
 
@@ -356,6 +358,53 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#inspirational_section {
+    background: url(../img/ice_cream_inspirational.jpg);
+    grid-area: i1;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#inspirational_section2 {
+    background: url(../img/josh-pereira-RmW3D6ZB2CE-unsplash.jpg);
+    grid-area: i2;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    
+}
+
+.inspirational_textbox {
+    height: 200px;
+    width: 80%;
+    background: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inspirational_text {
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.inspirational_titletext {
+    font-size: 40px;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
 }
 
 #footer2_text {
@@ -804,20 +853,6 @@ a {
         justify-content: center;
     }
 
-    #text_1 {
-        top: 0px;
-        left: 0px;
-        position: static;
-        width: 500px;
-    }
-    
-    #text_2 {
-        top: 0px;
-        right: 0px;
-        position: static;
-        width: 500px;
-    }
-
 
     .burger_list_visible {
         transform: none
@@ -828,14 +863,24 @@ a {
     }
 
     #grid_wrapper2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 150px 1500px 100px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 150px 1500px 800px 100px;
         grid-template-areas: 
-        "na"
-        "he"
-        "ar"
-        "fo"
+        "na na"
+        "he he"
+        "ar ar"
+        "i1 i2"
+        "fo fo"
     }
+
+    #text_1 {
+        width: 500px;
+    }
+    
+    #text_2 {
+        width: 500px;
+    }
+    
 
     .textbox_specials {
         width: 600px;
@@ -865,8 +910,21 @@ a {
 @media screen and (min-width: 1200px) {
     
     #grid_wrapper2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 150px 1000px 100px
+        grid-template-rows: 100px 150px 1000px 800px 100px
+    }
+
+    #text_1 {
+        top: 0px;
+        left: 0px;
+        position: static;
+        width: 600px;
+    }
+    
+    #text_2 {
+        top: 0px;
+        right: 0px;
+        position: static;
+        width: 600px;
     }
 
     #main {
