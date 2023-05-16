@@ -17,12 +17,13 @@ html { overflow-x: hidden; }
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 150px 1000px 500px 500px 100px;
+    grid-template-rows: 150px 1000px 500px 500px 800px 100px;
     grid-template-areas: 
     "he na"
     "s1 s1"
     "s2 s2"
     "s3 s3"
+    "s4 s4"
     "fo fo";
     z-index: 1;
     
@@ -50,6 +51,7 @@ nav {
     align-items: center;
 }
 
+
 #section1 {
     grid-area: s1;
     background-color: rgb(83, 39, 39);
@@ -76,7 +78,14 @@ nav {
     background-size: cover;
     display: flex;
     justify-content: center;
+}
 
+#section4 {
+    grid-area: s4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(83, 39, 39);
 }
 
 #text_full_size {
@@ -189,6 +198,22 @@ a {
     background: rgb(51, 86, 44);
     border: 4px solid black;
     height: 45px;
+}
+
+#map_text {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 5px;
+}
+
+#googlemaps {
+    height: 60%;
+    width: 80%;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 #text_full_size {
@@ -642,7 +667,7 @@ a {
 
 #grid_wrapper4 {
     display: grid;
-    grid-template-columns: minmax(200px 1fr) 200px;
+    grid-template-columns: minmax(200px, 1fr) 200px;
     grid-template-rows: 150px 100px 600px 600px 50px 800px 150px;
     grid-template-areas:
     "he na"
@@ -828,13 +853,14 @@ a {
     }
     #grid_wrapper {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 150px 50px 500px 500px 100px;
+        grid-template-rows: 100px 150px 50px 500px 500px 800px 100px;
         grid-template-areas: 
         "na na"
         "he he"
         "te te"
         "s1 s1"
         "s2 s3"
+        "s4 s4"
         "fo fo"
         
     }
