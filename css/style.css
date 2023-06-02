@@ -74,7 +74,7 @@ nav {
 
 #section3 {
     grid-area: s3;
-    background-image: url(../img/Kossa.jpg);
+    background-image: url(../img/kossa.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -212,8 +212,20 @@ a {
 #googlemaps {
     height: 60%;
     width: 80%;
-    border: 5px solid white;
+    border: 5px solid rgb(255, 149, 167);
     border-radius: 10px;
+}
+
+#wayfinding_text {
+    color: white;
+    margin-top: 40px;
+    font-size: 15px;
+    font-family: 'Tilt Neon', cursive;
+    letter-spacing: 1px;
+}
+
+#wayfinding_link {
+    color: rgb(255, 149, 167);
 }
 
 #text_full_size {
@@ -396,7 +408,7 @@ a {
 }
 
 #inspirational_section2 {
-    background: url(../img/josh-pereira-RmW3D6ZB2CE-unsplash.jpg);
+    background: url(../img/woman_licking_icecream.jpg);
     grid-area: i2;
     background-size: cover;
     display: flex;
@@ -943,14 +955,14 @@ a {
         top: 0px;
         left: 0px;
         position: static;
-        width: 600px;
+        width: 550px;
     }
     
     #text_2 {
         top: 0px;
         right: 0px;
         position: static;
-        width: 600px;
+        width: 550px;
     }
 
     #main {
